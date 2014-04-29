@@ -1,0 +1,118 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Manage", "Account", routeValues: null, htmlAttributes: new { title = "Manage" })
+        </li>
+        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+    </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        @*<li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>*@
+        @*<li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>*@
+
+        @*<!----------------Will Show Demo Modal Plugin ------------
+        ----------------------------------------------------------->*@
+        <li><a href=".myModalRegister" data-toggle="modal">Register</a></li>
+
+        <li><a href=".myModalLogin" data-toggle="modal">Login</a></li>
+    </ul>
+
+    @*<!---------------- Data Of Demo Modal Login Plugin ------
+    ------------------------------------------------------->*@
+    <div class="modal fade myModalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Demo Login Modal</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-4 control-label">Email</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-8 col-sm-10">
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     @*<!---------------- Data Of Demo Modal Register Plugin ------
+    ------------------------------------------------------->*@
+    <div class="modal fade myModalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Demo Register Modal</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-4 control-label">UserName</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-4 control-label">Confirm Password</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-8 col-sm-10">
+                                <button type="submit" class="btn btn-primary">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
