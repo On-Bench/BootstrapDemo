@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap Template</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/bootstrap-lightbox.min.css" rel="stylesheet">
+	</head>
+	<body>
+
+		
+    <!----------------Will Show Demo Navbar Components--------------- -->
+	    <div class="navbar navbar-inverse navbar-fixed-top">
+	        <div class="container">
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a href="index.html" class="navbar-brand">Application name</a>
+	            </div>
+	            <div class="navbar-collapse collapse">
+	                <ul class="nav navbar-nav">
+	                    <li class="active"><a href="index.html">Home</a></li>
+	                    <!----------------Will Show Demo Panel Components----------
+	                        --------------------------------------------------------- -->
+	                    <li><a href="about.html">About</a></li>
+	                    <!----------------Will Show Demo Panel Components----------
+	                        ------------------------------------------------------- -->
+	                    <li><a href="contact.html">Contact</a></li>
+	                    <li class="dropdown">
+	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course <b class="caret"></b></a>
+	                        <ul class="dropdown-menu">
+	                            <li><a href="#">CSS</a></li>
+	                            <li><a href="#">MVC</a></li>
+	                            <li><a href="#">SQL</a></li>
+	                        </ul>
+	                    </li>
+	                </ul>
+	                <!-------------- Demo Modal Js Plugin--------------
+	                    ---------------------------------------------- 
+	                    @Html.Partial("_LoginPartial") -->
+	                <ul class="nav navbar-nav navbar-right">
+
+	                    <!----------------Will Show Demo Modal Plugin ------------
+	                        --------------------------------------------------------- -->
+	                    <li><a href=".myModalRegister" data-toggle="modal">Register</a></li>
+
+	                    <li><a href=".myModalLogin" data-toggle="modal">Login</a></li>
+	                </ul>
+
+	            </div>
+	        </div>
+	    </div>
+        <br><br><br>
+    <div class="container body-content">
+        
+    	<!--  This code for Carousel--------------
+		--------------------------------------- -->
+		<div class="row">
+		    <div class="container">
+
+		        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+		            <!-- Indicators -->
+		            <ol class="carousel-indicators">
+		                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		            </ol>
+
+		            <!-- Wrapper for slides -->
+		            <div class="carousel-inner">
+		                <div class="item active">
+		                    <img src="img/1170x500.png" />
+		                    <div class="container">
+		                        <div class="carousel-caption">
+		                            <h1>Slide One</h1>
+		                            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications</p>
+		                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up</a></p>
+		                        </div>
+		                    </div>
+		                </div>
+
+		                <div class="item">
+		                    <img src="img/1170x500.png" />
+		                    <div class="container">
+		                        <div class="carousel-caption">
+		                            <h1>Slide Two</h1>
+		                            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications</p>
+		                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up</a></p>
+		                        </div>
+		                    </div>
+		                </div>
+
+		                <div class="item">
+		                    <img src="img/1170x500.png" />
+		                    <div class="container">
+		                        <div class="carousel-caption">
+		                            <h1>Slide Three</h1>
+		                            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications</p>
+		                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up</a></p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+
+		            <!-- Controls -->
+		            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		                <span class="glyphicon glyphicon-chevron-left"></span>
+		            </a>
+		            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		                <span class="glyphicon glyphicon-chevron-right"></span>
+		            </a>
+
+		        </div>
+		    </div><!--//container -->
+		</div>
+
+
+		<!----------------Will Show Demo Well Components and CSS Helper Class ( bg-primary class)----------
+		 --------------------------------------------------------- -->
+		<div class="bg-primary well">Feature Product</div>
+
+		<!--Css Alert - just call one time-->
+		<div class="alert alert-success hide alert-dismissable myAlert">
+		    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		    <strong>Success!</strong> Please check your cart.
+		</div>
+
+		<div class="row">
+		    <div class="col-sm-6 col-md-3">
+		        <!----------------Will Show Demo Thumbnail Components ------
+		        --------------------------------------------------------- -->
+		        <div class="thumbnail">
+		            <img src="img/a-product-18-241x327.jpg" class="img" />
+		            <!--Js content hover - call in js file-->
+		            <div class="contenthover">
+		                <h3>Lorem ipsum dolor</h3>
+		                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+		                <!----------------Will Show Demo Lightbox Plugin ------------
+		                --------------------------------------------------------- -->
+		                <p><a data-toggle="lightbox" href=".demoLightbox" class="btn btn-success mylightbox">Quick View</a></p>
+		            </div>
+		            <div class="caption">
+		                <h3>Thumbnail label</h3>
+		                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		                <p>
+		                    <!----------------Will Show Demo ToolTip Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-primary myTooltip" role="button" data-toggle="tooltip" data-placement="left" title="My Tooltip Demo Left">Add To Cart</a>
+		                    <!----------------Will Show Demo Popover Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-default" data-placement="left" data-content="This is the body of Popover on the Left" data-toggle="popover" data-original-title="Demo Popover Left">Detail</a>
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="col-sm-6 col-md-3">
+		        <!----------------Will Show Demo Thumbnail Components ------
+		        --------------------------------------------------------- -->
+		        <div class="thumbnail">
+		            <img src="img/a-product-18-241x327.jpg" class="img" />
+		            <!--Js content hover - call in js file-->
+		            <div class="contenthover">
+		                <h3>Lorem ipsum dolor</h3>
+		                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+		                <!----------------Will Show Demo Lightbox Plugin ------------
+		                --------------------------------------------------------- -->
+		                <p><a data-toggle="lightbox" href=".demoLightbox" class="btn btn-success mylightbox">Quick View</a></p>
+		            </div>
+		            <div class="caption">
+		                <h3>Thumbnail label</h3>
+		                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		                <p>
+		                    <!----------------Will Show Demo ToolTip Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-primary myTooltip" role="button" data-toggle="tooltip" data-placement="right" title="My Tooltip Demo Right">Add To Cart</a>
+		                    <!----------------Will Show Demo Popover Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-default" data-placement="right" data-content="This is the body of Popover on the Right" data-toggle="popover" data-original-title="Demo Popover Right">Detail</a>
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="col-sm-6 col-md-3">
+		        <!----------------Will Show Demo Thumbnail Components ------
+		        --------------------------------------------------------- -->
+		        <div class="thumbnail">
+		            <img src="img/a-product-18-241x327.jpg" class="img" />
+		            <!--Js content hover - call in js file-->
+		            <div class="contenthover">
+		                <h3>Lorem ipsum dolor</h3>
+		                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+		                <!----------------Will Show Demo Lightbox Plugin ------------
+		                --------------------------------------------------------- -->
+		                <p><a data-toggle="lightbox" href=".demoLightbox" class="btn btn-success mylightbox">Quick View</a></p>
+		            </div>
+		            <div class="caption">
+		                <h3>Thumbnail label</h3>
+		                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		                <p>
+		                    <!----------------Will Show Demo ToolTip Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-primary myTooltip" role="button" data-toggle="tooltip" data-placement="top" title="My Tooltip Demo Top">Add To Cart</a>
+		                    <!----------------Will Show Demo Popover Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-default" data-placement="top" data-content="This is the body of Popover on the Top" data-toggle="popover" data-original-title="Demo Popover Top">Detail</a>
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="col-sm-6 col-md-3">
+		        <!----------------Will Show Demo Thumbnail Components ------
+		        --------------------------------------------------------- -->
+		        <div class="thumbnail">
+		            <img src="img/a-product-18-241x327.jpg" class="img" />
+		            <!--Js content hover - call in js file-->
+		            <div class="contenthover">
+		                <h3>Lorem ipsum dolor</h3>
+		                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+		                <!----------------Will Show Demo Lightbox Plugin ------------
+		                --------------------------------------------------------- -->
+		                <p><a data-toggle="lightbox" href=".demoLightbox" class="btn btn-success mylightbox">Quick View</a></p>
+		            </div>
+		            <div class="caption">
+		                <h3>Thumbnail label</h3>
+		                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		                <p>
+		                    <!----------------Will Show Demo ToolTip Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-primary myTooltip" role="button" data-toggle="tooltip" data-placement="bottom" title="My Tooltip Demo Bottom">Add To Cart</a>
+		                    <!----------------Will Show Demo Popover Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-default" data-placement="bottom" data-content="This is the body of Popover on the Bottom" data-toggle="popover" data-original-title="Demo Popover Bottom">Detail</a>
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="row row2">
+		    <div class="col-sm-6 col-md-3">
+		        <!----------------Will Show Demo Thumbnail Components ------
+		        --------------------------------------------------------- -->
+		        <div class="thumbnail">
+		            <img src="img/a-product-18-241x327.jpg" class="img" />
+		            <!--Js content hover - call in js file-->
+		            <div class="contenthover">
+		                <h3>Lorem ipsum dolor</h3>
+		                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+		                <!----------------Will Show Demo Lightbox Plugin ------------
+		                --------------------------------------------------------- -->
+		                <p><a data-toggle="lightbox" href=".demoLightbox" class="btn btn-success mylightbox">Quick View</a></p>
+		            </div>
+		            <div class="caption">
+		                <h3>Thumbnail label</h3>
+		                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		                <p>
+		                    <!----------------Will Show Demo ToolTip Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-primary myTooltip" role="button" data-toggle="tooltip" data-placement="left" title="My Tooltip Demo Left">Add To Cart</a>
+		                    <!----------------Will Show Demo Popover Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-default" data-placement="left" data-content="This is the body of Popover on the Left" data-toggle="popover" data-original-title="Demo Popover Left">Detail</a>
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="col-sm-6 col-md-3">
+		        <!----------------Will Show Demo Thumbnail Components ------
+		        --------------------------------------------------------- -->
+		        <div class="thumbnail">
+		            <img src="img/a-product-18-241x327.jpg" class="img" />
+		            <!--Js content hover - call in js file-->
+		            <div class="contenthover">
+		                <h3>Lorem ipsum dolor</h3>
+		                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+		                <!----------------Will Show Demo Lightbox Plugin ------------
+		                --------------------------------------------------------- -->
+		                <p><a data-toggle="lightbox" href=".demoLightbox" class="btn btn-success mylightbox">Quick View</a></p>
+		            </div>
+		            <div class="caption">
+		                <h3>Thumbnail label</h3>
+		                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		                <p>
+		                    <!----------------Will Show Demo ToolTip Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-primary myTooltip" role="button" data-toggle="tooltip" data-placement="right" title="My Tooltip Demo Right">Add To Cart</a>
+		                    <!----------------Will Show Demo Popover Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-default" data-placement="right" data-content="This is the body of Popover on the Right" data-toggle="popover" data-original-title="Demo Popover Right">Detail</a>
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="col-sm-6 col-md-3">
+		        <!----------------Will Show Demo Thumbnail Components ------
+		        --------------------------------------------------------- -->
+		        <div class="thumbnail">
+		            <img src="img/a-product-18-241x327.jpg" class="img" />
+		            <!--Js content hover - call in js file-->
+		            <div class="contenthover">
+		                <h3>Lorem ipsum dolor</h3>
+		                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+		                <!----------------Will Show Demo Lightbox Plugin ------------
+		                --------------------------------------------------------- -->
+		                <p><a data-toggle="lightbox" href=".demoLightbox" class="btn btn-success mylightbox">Quick View</a></p>
+		            </div>
+		            <div class="caption">
+		                <h3>Thumbnail label</h3>
+		                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		                <p>
+		                    <!----------------Will Show Demo ToolTip Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-primary myTooltip" role="button" data-toggle="tooltip" data-placement="top" title="My Tooltip Demo Top">Add To Cart</a>
+		                    <!----------------Will Show Demo Popover Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-default" data-placement="top" data-content="This is the body of Popover on the Top" data-toggle="popover" data-original-title="Demo Popover Top">Detail</a>
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="col-sm-6 col-md-3">
+		        <!----------------Will Show Demo Thumbnail Components ------
+		        --------------------------------------------------------- -->
+		        <div class="thumbnail">
+		            <img src="img/a-product-18-241x327.jpg" class="img" />
+		            <!--Js content hover - call in js file-->
+		            <div class="contenthover">
+		                <h3>Lorem ipsum dolor</h3>
+		                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+		                <!----------------Will Show Demo Lightbox Plugin ------------
+		                --------------------------------------------------------- -->
+		                <p><a data-toggle="lightbox" href=".demoLightbox" class="btn btn-success mylightbox">Quick View</a></p>
+		            </div>
+		            <div class="caption">
+		                <h3>Thumbnail label</h3>
+		                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		                <p>
+		                    <!----------------Will Show Demo ToolTip Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-primary myTooltip" role="button" data-toggle="tooltip" data-placement="bottom" title="My Tooltip Demo Bottom">Add To Cart</a>
+		                    <!----------------Will Show Demo Popover Plugin ------------
+		                    --------------------------------------------------------- -->
+		                    <a class="btn btn-default" data-placement="bottom" data-content="This is the body of Popover on the Bottom" data-toggle="popover" data-original-title="Demo Popover Bottom">Detail</a>
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+
+
+		    <!---------------- Data Of Demo Lightbox Plugin ------
+		    ----------------------------------------------------- -->
+		    <div class="lightbox fade hide demoLightbox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		        <div class='lightbox-content'>
+		            <img src="img/a-product-18-450x600.png" />
+		            <div class="lightbox-caption"><p>Your caption here</p></div>
+		        </div>
+		    </div>
+
+
+		</div>
+
+
+
+        <hr />
+        <footer>
+            <div class="col-md-12 navbar-default well">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a class="navbar-link" href="#">Home</a></li>
+                            <li><a class="navbar-link" href="#">About</a></li>
+                            <li><a class="navbar-link" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <h3>My Account</h3>
+                        <ul>
+                            <li><a class="navbar-link" href="#">Home</a></li>
+                            <li><a class="navbar-link" href="#">About</a></li>
+                            <li><a class="navbar-link" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <h3>Sevices</h3>
+                        <ul>
+                            <li><a class="navbar-link" href="#">Home</a></li>
+                            <li><a class="navbar-link" href="#">About</a></li>
+                            <li><a class="navbar-link" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a class="navbar-link" href="#">Home</a></li>
+                            <li><a class="navbar-link" href="#">About</a></li>
+                            <li><a class="navbar-link" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p>&copy; 2014 - Design by Linh Dinh</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+    <!---------------- Data Of Demo Modal Login Plugin ------
+    ----------------------------------------------------- -->
+    <div class="modal fade myModalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Demo Login Modal</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-4 control-label">Email</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-8 col-sm-10">
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!---------------- Data Of Demo Modal Register Plugin ------
+    ----------------------------------------------------- -->
+    <div class="modal fade myModalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Demo Register Modal</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-4 control-label">UserName</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-4 control-label">Confirm Password</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-8 col-sm-10">
+                                <button type="submit" class="btn btn-primary">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+		<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery.contenthover.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/bootstrap-lightbox.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap Template</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/bootstrap-lightbox.min.css" rel="stylesheet">
+	</head>
+	<body>
+
+<!----------------Will Show Demo Navbar Components--------------- -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">Application name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <!----------------Will Show Demo Panel Components----------
+                    --------------------------------------------------------- -->
+                    <li><a href="about.html">About</a></li>
+                    <!----------------Will Show Demo Panel Components----------
+                     ------------------------------------------------------- -->
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">MVC</a></li>
+                            <li><a href="#">SQL</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-------------- Demo Modal Js Plugin--------------
+                 ---------------------------------------------- 
+                @Html.Partial("_LoginPartial") -->
+                <ul class="nav navbar-nav navbar-right">
+
+					<!----------------Will Show Demo Modal Plugin ------------
+			        --------------------------------------------------------- -->
+			        <li><a href=".myModalRegister" data-toggle="modal">Register</a></li>
+
+			        <li><a href=".myModalLogin" data-toggle="modal">Login</a></li>
+			    </ul>
+
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+		<div class="container body-content">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">About</h3>
+				</div>
+				<div class="panel-body list-group">
+					<h3>Use this area to provide additional message</h3>
+
+					<p class="list-group-item">Use this area to provide additional information.</p>
+
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery.contenthover.js"></script>
+		<script type="text/javascript" src="js/bootstrap-lightbox.min.js"></script>
+				<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
